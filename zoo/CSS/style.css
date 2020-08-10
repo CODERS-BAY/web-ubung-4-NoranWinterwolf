@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
     background-color: rgb(100, 145, 230);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -17,7 +20,7 @@ header .headbanner {
 }
 
 header nav {
-    background-color: rgb(22, 104, 39);
+    background-color: rgba(22, 104, 38, 0.9);
     padding: 1rem;
     margin: 0 5rem;
     border-radius: 1rem;
@@ -57,7 +60,7 @@ header a.aktuell {
 }
 
 main {
-    background-color: rgba(151, 192, 255, 0.699);
+    background-color: rgba(151, 192, 255, 0.9);
     margin: 2rem;
     display: flex;
     flex-direction: row;
@@ -75,6 +78,7 @@ main h1 {
     background-color: rgba(0, 0, 185, 0.603);
     border-radius: 15px;
     box-shadow: 5px 5px 10px black;
+    color: white;
 }
 
 main article {
@@ -139,6 +143,7 @@ fieldset div{
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
+    padding: inherit;
 }
 
 label.formlabel {
@@ -260,4 +265,16 @@ th {
 footer {
     padding: 1rem;
     background-color: rgb(22, 104, 39);
+}
+
+@media screen and (max-width: 360px) {
+    main {
+        display: block;
+    }
+
+    main article {
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    }
 }
