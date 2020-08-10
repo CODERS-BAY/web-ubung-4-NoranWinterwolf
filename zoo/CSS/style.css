@@ -21,6 +21,7 @@ header nav {
     padding: 1rem;
     margin: 0 5rem;
     border-radius: 1rem;
+    box-shadow: 5px 5px 5px black;
 }
 
 header ul {
@@ -94,6 +95,136 @@ main img {
     height: auto;
     box-shadow: 5px 5px 10px black;
 }
+
+.mainText {
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 120%;
+    max-width: 80%;
+    flex-basis: 100%;
+}
+
+/*Formular Style*/
+article.form {
+    margin: auto;
+    display: flex;
+}
+
+fieldset {
+background-color: rgb(154, 181, 255);
+border-style: outset;
+border-radius: 15px;
+box-shadow: 5px 5px 5px black;
+width: 100%;
+margin: auto;
+}
+
+fieldset legend {
+    font-size: 110%;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgb(158, 194, 235);
+    padding: 0.7rem;
+    box-shadow: 1px 1px 2px black;
+    border-radius: 15px;
+}
+
+fieldset div{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+label.formlabel {
+    font-size: 100%;
+    font-weight: bold;
+    flex: 0 0 100%;
+}
+
+textarea {
+    flex: 0 0 80%;
+    margin-left: 1rem;
+    border-radius: 15px;
+}
+
+select input.text {
+    margin-left: 10rem;
+    flex: 0 0 40%;
+    border-radius: 15px;
+}
+
+input.text {
+    border-radius: 15px;
+    border-style: inset;
+    line-height: 1.4rem;
+}
+
+#besuchArt {
+    margin-left: 1rem;
+}
+
+input:not(.radio) {
+    flex: 0 0 50%;
+    margin-left: 1rem;
+}
+
+.radioChoice label:not(.formlabel) {
+    padding-right: 1rem;
+}
+
+.flexTime {
+    flex-direction: column;
+}
+
+#besuchAm {
+    text-align: center;
+}
+
+.flexTime input {
+    width: 20%;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 1.4rem;
+}
+
+#like {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.button {
+    max-width: 40%;
+    flex-wrap: nowrap;
+    margin-left: 0;
+}
+
+/*Tabellen Style*/
+.tableContainer {
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+}
+
+ tr, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+td:last-child {
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(0, 0, 185);
+    color: white;
+}
+
+th {
+    background-color: black;
+}
+
 
 footer {
     padding: 1rem;
